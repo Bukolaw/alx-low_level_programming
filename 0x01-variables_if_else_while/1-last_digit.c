@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
- * Main - entry point
+ * main - Entry point
+ * Description: Positive anything is better than nothing
  * Return: 0
  */
 

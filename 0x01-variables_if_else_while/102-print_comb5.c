@@ -22,7 +22,7 @@ int main(void)
 						   * combination
 				*/
 			{
-				putchar(' , ');
+				putchar(',');
 				putchar(' ');
 			}
 		}

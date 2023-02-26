@@ -1,18 +1,18 @@
-#include<stdio.h>
-
+#include <stdio.h>
 /**
- * main - Size is not grandeur, and territory does not make a nation
- * Description - Print the size of various types
- * Return: Always 0 (success)
+ * main - C program that print the size of variouscomputer
+ * Return: 0(Success)
  */
+int main (void)
+	char a;
+	int b;
+	long int c;
+	long long int d;
+	float f;
 
-int main(void)
-{
-	printf("Size of a char: %d byte(s)\n", sizeof(char));
-	printf("Size of an int: %d byte(s)\n", sizeof(int));
-	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
-        printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
-	printf("Size of a float: %zu byte(s)\n", sizeof(float));
-	return (0);
-}
-
+printf("size of a char: %lu byte(s)\n", (unsigned long)sizeof(a));
+printf("size of an int: %lu byte(s)\n", (unsigned long)sizeof(b));
+prinf("size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
+prinf("size of a long long int: %lu byte(s)\n",(unsigned long)sizeof(c));
+printf("size of ;
+return: (0);

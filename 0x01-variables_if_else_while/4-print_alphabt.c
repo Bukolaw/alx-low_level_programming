@@ -1,23 +1,25 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
- * Description - Alphabet Soup
- * Return: 0
+ * Description: Print lowercase alphabet excluding e and q
+ * Return: Always 0
  */
 
 int main(void)
 {
-	char c;
+char l = 'a';
 
-	for (c = 'a'; c <= 'z'; c++)
+while (l <= 'z')
+{
+	if (l != 'e' && l != 'q')
 	{
-		if (c != 'e' && c != 'q')
-		{
-			putchar(c);
-		}
+		putchar(l);
 	}
-	putchar('\n');
-
-	return (0);
+	l++;
+}
+putchar('\n');
+return (0);
 }

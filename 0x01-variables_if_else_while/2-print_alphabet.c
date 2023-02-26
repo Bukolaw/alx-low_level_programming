@@ -1,20 +1,21 @@
 #include <stdio.h>
 
 /**
- * main -Entry point
- * Description: The alphabet game
- * Return: 0
+ *main - Entry point
+ *
+ *Return: Always 0
  */
 
 int main(void)
 {
-	char c = 'a';
+char lc;
+lc = 'a';
 
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
-	putchar('\n');
-	return (0);
+while (lc <= 'z')
+{
+	putchar(lc);
+	lc++;
+}
+putchar('\n');
+return (0);
 }

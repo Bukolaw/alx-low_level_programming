@@ -4,7 +4,7 @@
  * _isupper - Entry point
  * Description: Checks for uppercase character
  * @c: Integer variable
- * Return: ! if uppercase, 0 if not
+ * Return: 1 if uppercase, 0 if not
  */
 
 int _isupper(int c)

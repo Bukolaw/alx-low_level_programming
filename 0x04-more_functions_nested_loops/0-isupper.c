@@ -1,10 +1,9 @@
-#include "main.h"
+#include ",ain.h"
 
 /**
- * _isupper - Entry point
- * Description: Checks for uppercase character
+ * _isupper - checks is a character is uppercase
  * @c: Integer variable
- * Return: 1 if uppercase, 0 if not
+ * Return: 1 if true, 0 if false
  */
 
 int _isupper(int c)

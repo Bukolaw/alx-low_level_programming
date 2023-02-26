@@ -5,6 +5,7 @@
  * Description - Combination '00' - '99'
  * Return: 0
  */
+
 int main(void)
 {
 	int i, j;
@@ -17,10 +18,8 @@ int main(void)
 			putchar((i % 10) + '0'); /* print second digit of i */
 			putchar(' ');
 			putchar((j / 10) + '0'); /* print first digit of j */
-			putchar((j % 10) + '0'); /* print second digit of j */
-			if (i != 98 || j != 99) /* check if it's the last
-						   * combination
-				*/
+			putchar((j % 10) + '0'); /*  print second digit of j */
+			if (i != 98 || j != 99) /* check if it's the last combination */
 			{
 				putchar(',');
 				putchar(' ');

@@ -1,1 +1,1 @@
-0x01. C - Variables, if, else, while
+This is script for C - Variables,if,else,while

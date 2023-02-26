@@ -3,34 +3,33 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Description: Program assigns a random number to n each time it is executed.
- * It then prints the last digit of the number stored in the variable n.
- * Return: Always 0 (Success)
+ * main -Entry point
+ * Description: Positive anything is better than negative nothing
+ * Return: 0
  */
 
 int main(void)
 {
-int n;
+	int n, dig;
 
-srand(time(0));
-n = rand() - RAND_MAX / 2;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	dig = n % 10;
 
-if ((n % 10) > 5)
-{
-	printf("Last digit of %d is %d and is greater than 5\n", n, (n % 10));
-}
+	printf("Last digit of %d is ", n);
 
-if
-((n % 10) == 0)
-{
-	printf("Last digit of %d is %d and is 0\n", n, (n % 10));
-}
+	if (dig > 5)
+	{
+		printf("%d and is greater than 5\n", dig);
+	}
+	else if (dig == 0)
+	{
+		printf("%d and is 0\n", dig);
+	}
+	else
+	{
+		printf("%d and is less than 6 and not 0\n", dig);
+	}
 
-if
-((n % 10) < 6 && (n % 10) != 0)
-{
-	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, (n % 10));
-}
-return	(0);
+	return (0);
 }

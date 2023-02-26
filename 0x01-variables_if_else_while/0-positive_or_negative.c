@@ -1,35 +1,28 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include <stdio.h>
 /**
  * main - Entry point
- * Description: Program assigns a random number to n each time it is executed.
- * It then prints whether the number stored in n is zero, positive or negative.
- * Return: Always 0
- * Author: Flavie Okon
+ * Description: Positive anything is better than negative nothing
+ * Return: 0
  */
-
 int main(void)
 {
 int n;
-
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-
-if (n < 0)
+printf("%d ", n);
+if (n > 0)
 {
-	printf("%d is negative\n", n);
+	printf("is positive\n");
 }
-
 else if (n == 0)
 {
-	printf("%d is zero\n", n);
+	printf("is zero\n");
 }
-
 else
 {
-	printf("%d is positive\n", n);
+	printf("is negative\n");
 }
-return	(0);
+return (0);
 }

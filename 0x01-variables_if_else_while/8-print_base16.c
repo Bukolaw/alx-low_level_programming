@@ -1,26 +1,20 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
 
 /**
  * main - Entry point
- * Description: Print all the digits of base 16 in lowercase
- * Return: Always 0
+ * Description - Hexadecimail, 16.Betty plz :)
+ * Return: 0
  */
 
 int main(void)
 {
-char i;
+	int i;
 
-for (i = '0'; i <= '9'; ++i)
-{
-	putchar(i);
-}
-for (i = 'a'; i <= 'f'; ++i)
-{
-	putchar(i);
-}
-putchar('\n');
+	for (i = 0; i < 16; i++)
+	{
+		putchar(i < 10 ? i + '0' : i + 'a' - 10);
+	}
+	putchar('\n');
 
-return (0);
+	return (0);
 }

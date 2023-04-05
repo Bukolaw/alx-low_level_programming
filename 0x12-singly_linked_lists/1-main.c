@@ -4,9 +4,9 @@
 #include "lists.h"
 
 /**
- * main - checks code
+ * main - check the code
  *
- * Return: Always zero.
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -31,4 +31,4 @@ int main(void)
     free(new->str);
     free(new);
     return (0);
-}i
+}

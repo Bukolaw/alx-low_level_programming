@@ -2,21 +2,22 @@
 #define MY_LISTS_H
 
 /*
- * Desc: Header file for d  singly linked list proj
- * contains functions and prototypes used
- */
+* Desc: Header file for d  singly linked list proj
+* contains functions and prototypes used
+*/
 
+#include <stddef.h>
 #include <stdlib.h>
 #include <stdio.h>
 
 /**
- * struct listint_s - singly linked listt
- * @n: integer
- * @next: point to  next node
- *
- * Desc: single linked list node struct
- *
- */
+* struct listint_s - singly linked listt
+* @n: integer
+* @next: point to  next node
+*
+* Desc: single linked list node struct
+*
+*/
 typedef struct listint_s
 {
 	int n;

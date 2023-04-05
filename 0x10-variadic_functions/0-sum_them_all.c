@@ -21,12 +21,12 @@ int sum_them_all(const unsigned int n, ...)
 
 	/* intialize the va_list with the first parameter */
 	va_start(args, n);
-
-	for (i = 0 i < n; i++);
-	{
-		sum += va_arg(args, int);
-		/* add each parameter to the sum */
-	}
+	
+		for (i = 0; i < n; i++);
+			{
+				sum += va_arg(args, int);
+				/* add each parameter to the sum */
+			}
 	/* clean up the va_list */
 	va_end(args);
 	return (sum);

@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * Description - Alphabet Soup
+ * Description - Alphabeth Soup
  * Return: 0
  */
 

@@ -1,5 +1,4 @@
-#include<stdio.h>
-
+#include <stdio.h>
 /**
  * main - Hello, printf
  * Description: Using printf to print text

@@ -3,14 +3,13 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Description: Positive anything is better than nothing
+ * main -Entry point
+ * Description: Positive anything is better than negative nothing
  * Return: 0
  */
 
 int main(void)
 {
-
 	int n, dig;
 
 	srand(time(0));
@@ -31,5 +30,6 @@ int main(void)
 	{
 		printf("%d and is less than 6 and not 0\n", dig);
 	}
+
 	return (0);
 }

@@ -1,4 +1,7 @@
-#include variadic_functions.h
+#include <stddef.h>
+#include <stdio.h>
+#include <stdarg.h>
+#include "variadic_functions.h"
 
 /**
  * print_string - print variable no of strings.separated by a 
@@ -23,18 +26,18 @@ void print_string(const char * separator, const unsigned int n, ...)
 		str = va_arg(args, char *);
 		if(str == NULL)
 		{
-			print("(nil)");
+			printf("(nil)");
 		}
 		else
 		{
-		printf("%s, str);
+		printf("%s", str);
 		}
 		if (separator != NULL && i != n - 1)
 		{
-			printf("%s", separator)
+			printf("%s", separator);
 		}
 	}
-	printf("\n")
+	printf("\n");
 	va_end(args);
 }
 

@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-#include <std.lib.h>
+#include <stdlib.h>
 
 /**
  * print_all - function that prints.
@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				printf("%C", va_arg(args, int));
+				printf("%c", va_arg(args, int));
 				break;
 			case 'i':
 				printf("%d", va_arg(args, int));
@@ -45,7 +45,7 @@ void print_all(const char * const format, ...)
 		/* if there is any other format specificer */
 		if(format [i + 1])
 			printf(", ");
-		i++
+		i++;
 	}
 	printf("\n");
 	va_end(args);

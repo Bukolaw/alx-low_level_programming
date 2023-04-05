@@ -10,7 +10,7 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	/** declar a variable of type va_list to store the parameters */
-	va_list args;
+	va_list list;
 	int sum = 0;
 	unsigned int i;
 
@@ -20,14 +20,14 @@ int sum_them_all(const unsigned int n, ...)
 	}
 
 	/* intialize the va_list with the first parameter */
-	va_start(args, n);
+	va_start(list, n);
 	
-		for (i = 0; i < n; i++);
-			{
-				sum += va_arg(args, int);
-				/* add each parameter to the sum */
-			}
+	for (i = 0; i < n; i++)
+	{
+		sum += va_arg(list, int);
+		/* add each parameter to the sum */
+	}
 	/* clean up the va_list */
-	va_end(args);
+	va_end(list);
 	return (sum);
 }

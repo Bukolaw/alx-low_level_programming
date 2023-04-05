@@ -4,7 +4,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_string - print variable no of strings.separated by a 
+ * print_strings - print variable no of strings.separated by a 
  * particular string, followed by a new line
  * @separator: the string printed between strings
  * @n: no of strings printed
@@ -13,7 +13,7 @@
  * Return: void
  */
 
-void print_string(const char * separator, const unsigned int n, ...)
+void print_strings(const char * separator, const unsigned int n, ...)
 {
 	va_list args;
 	unsigned int i;

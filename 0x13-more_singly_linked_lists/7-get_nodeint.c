@@ -1,13 +1,13 @@
-i#include "lists.h"
+#include "lists.h"
 
 /**
- * get_nodeint_at_index - Entry pointe
- * Desc: Returns the last node of a listint_t linked list.
- * @head: Pointer to first node in the linked list
- * @index: index of the node, starting at zero
- *
- * Return: NULL, node not exist
- */
+* get_nodeint_at_index - Entry pointe
+* Desc: Returns the last node of a listint_t linked list.
+* @head: Pointer to first node in the linked list
+* @index: index of the node, starting at zero
+*
+* Return: NULL, node not exist
+*/
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
